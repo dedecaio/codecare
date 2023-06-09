@@ -5,7 +5,70 @@
     font-family: "Roboto";
 }
 
+:root {
+    --corDestaque: #eee;
+    --corSecundaria: black;
+    --corMedia: #ccc;
+}
+
 html,
 body {
     height: 100%;
+    background-color: var(--corDestaque);
+}
+
+html body input:focus {
+    outline: 0;
+}
+
+.container {
+    max-width: 600px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h2 {
+    font-style: italic;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--corSecundaria);
+}
+
+section.input {
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+section.input p {
+    font-size: 13px;
+    color: var(--corSecundaria);
+    font-weight: 300;
+}
+
+section.input form {
+    width: 100%;
+    margin-top: 25px;
+}
+
+section.input input {
+    height: 40px;
+    width: 95%;
+    border: 0;
+    background-color: var(--corMedia);
+    padding-left: 10px;
+}
+
+section.input button {
+    width: 5%;
+    height: 40px;
+    border: 0;
+    background-color: var(--corSecundaria);
+    color: var(--corDestaque);
 }
