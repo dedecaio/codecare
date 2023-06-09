@@ -6,15 +6,18 @@
 }
 
 :root {
-    --corDestaque: #eee;
-    --corSecundaria: black;
-    --corMedia: #ccc;
+    --corDestaque: #18536b;
+    --corSecundaria: #9ce0db;
+    --corMedia: rgba(245, 245, 245, 0.7);
+    --corAlerta: red;
+    --corDestaque2: #2f7586;
 }
 
 html,
 body {
     height: 100%;
-    background-color: var(--corDestaque);
+    background: linear-gradient(to bottom, var(--corDestaque),
+            var(--corDestaque2));
 }
 
 html body input:focus {
@@ -23,7 +26,7 @@ html body input:focus {
 
 .container {
     max-width: 600px;
-    padding: 0 2%;
+    padding: 0 3%;
     margin: 0 auto;
 }
 
@@ -41,7 +44,7 @@ header h2 {
 
 section.input {
     text-align: center;
-    padding: 20px 0;
+    padding: 8px 0 20px 0;
 }
 
 
@@ -54,7 +57,7 @@ section.input p {
 
 section.input form {
     width: 100%;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 section.input input {
@@ -63,12 +66,69 @@ section.input input {
     border: 0;
     background-color: var(--corMedia);
     padding-left: 10px;
+    border: 0;
+}
+
+section.input input::placeholder {
+    color: var(--corDestaque);
 }
 
 section.input button {
     width: 5%;
     height: 40px;
     border: 0;
-    background-color: var(--corSecundaria);
+    /* border-left: px solid var(--corDestaque);*/
+    background-color: var(--corMedia);
     color: var(--corDestaque);
+
+}
+
+section.information {
+    text-align: center;
+    padding: 20px 0;
+}
+
+section.information .wraper {
+    background: var(--corMedia);
+    padding: 15px;
+    border-radius: 20px;
+
+}
+
+section.information h2 {
+    color: var(--corDestaque);
+    font-size: 30px;
+}
+
+section.information i {
+    font-size: 140px;
+    margin: 15px 0;
+    color: var(--corDestaque);
+}
+
+section.information p {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--corDestaque);
+}
+
+section.information .info {
+    margin-top: 15px;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+    color: var(--corSecundaria);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+}
+
+footer p {
+    margin-top: 4px;
+    font-size: 12px;
 }
