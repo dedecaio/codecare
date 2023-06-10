@@ -4,7 +4,7 @@ var options = [
     ["Câncer de Próstata", "Urologista ou Oncologista especializado em câncer de próstata.",
         " câncer de próstata afeta a próstata, uma glândula no sistema reprodutivo masculino. Geralmente cresce lentamente e pode não causar sintomas nos estágios iniciais. À medida que progride, pode causar dificuldade na micção, sangue no esperma e dor nos quadris ou costas."],
     ["Câncer de Cólon e Reto", "Gastroenterologista ou Oncologista especializado em câncer colorretal.",
-        "O câncer colorretal se desenvolve no intestino grosso (cólon) ou no reto. Pode se formar a partir de pólipos pré-cancerosos no revestimento interno do cólon ou do reto. Os sintomas podem incluir mudanças nos hábitos intestinais, sangramento retal, dor abdominal e perda de peso inexplicada.em"],
+        "O câncer colorretal se desenvolve no intestino grosso (cólon) ou no reto. Pode se formar a partir de pólipos pré-cancerosos no revestimento interno do cólon ou do reto. Os sintomas podem incluir mudanças nos hábitos intestinais, sangramento retal, dor abdominal e perda de peso inexplicada."],
     ["Câncer de Pele", "Dermatologista ou Oncologista especializado em câncer de pele.",
         "O câncer de pele se origina nas células da pele. Os tipos mais comuns são o carcinoma basocelular, o carcinoma de células escamosas e o melanoma. O câncer de pele pode aparecer como uma pinta ou lesão que muda de tamanho, forma ou cor ao longo do tempo."]
 ];
@@ -24,6 +24,13 @@ function msgHandler(num) {
     icon.classList.replace("fa-check", "fa-triangle-exclamation");
     especialista.innerHTML = genericMsg + options[num][1];
     info.innerHTML = options[num][2];
+}
+
+function setDefault() {
+    msg.innerHTML = okMsg;
+    icon.classList.replace("fa-triangle-exclamation", "fa-check");
+    especialista.innerHTML = "";
+    info.innerHTML = "";
 }
 
 form.addEventListener("submit", (event) => {
@@ -47,8 +54,9 @@ form.addEventListener("submit", (event) => {
             msgHandler(4);
             break;
         default:
-            msg.innerHTML = okMsg;
+            setDefault();
     }
+
 });
 
 
