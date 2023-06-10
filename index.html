@@ -26,7 +26,7 @@
             <p>Aqui simulamos uma entrada de um sensor, como uma lista de entradas
                 que vai de x à y.
             </p>
-            <form method="POST">
+            <form method="get">
                 <input placeholder="Insira aqui..." type="text" name="code" id="code" /><button>
                     <i class="fa-solid fa-paper-plane"></i>
                 </button>
@@ -37,16 +37,11 @@
     <section class="information">
         <div class="container">
             <div class="wraper">
-                <h2>Alerta</h2>
-                <i class="fa-solid fa-triangle-exclamation"></i>
-                <p>Células cancerosas foram encontradas na sua corrente sanguínea.
-                    Favor consultar um médico para eliminá-las.
+                <h2 id="msg">Está tudo certo.</h2>
+                <i id="icon" class="fa-solid fa-check"></i>
+                <p id="especialista">
                 </p>
-                <p class="info">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam distinctio eveniet reprehenderit
-                    asperiores totam non inventore rem, dignissimos, mollitia doloremque eligendi voluptatem ex ipsum
-                    quo, perferendis eaque maiores fugiat doloribus.
-                </p>
+                <p id="info" class="info"></p>
             </div>
         </div>
     </section><!--information-->
@@ -69,7 +64,7 @@
         </div>
     </footer>
 
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>

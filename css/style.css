@@ -6,10 +6,10 @@
 }
 
 :root {
-    --corDestaque: #18536b;
-    --corSecundaria: #9ce0db;
+    --corDestaque: #18356b;
+    --corSecundaria: #9cb9e0;
     --corMedia: rgba(245, 245, 245, 0.7);
-    --corDestaque2: #2f7586;
+    --corDestaque2: #2f5286;
 }
 
 html,
@@ -98,7 +98,8 @@ section.information .wraper {
 
 section.information h2 {
     color: var(--corDestaque);
-    font-size: 30px;
+    font-size: 25px;
+    margin: 0 20px;
 }
 
 section.information i {
@@ -109,12 +110,12 @@ section.information i {
 
 section.information p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--corDestaque);
 }
 
 section.information .info {
-    margin-top: 15px;
+    margin-top: 12px;
     text-align: justify;
     font-weight: 300;
     font-size: 15px;
