@@ -43,6 +43,27 @@ header h2 {
     color: var(--corSecundaria);
 }
 
+section.agentes {
+    padding: 20px 0;
+    text-align: justify;
+}
+
+section.agentes h1 {
+    font-size: 18px;
+    color: var(--corSecundaria);
+    font-weight: 400;
+    border-bottom: 1px solid var(--corSecundaria);
+}
+
+section.agentes .estado {
+    margin-top: 10px;
+}
+
+section.agentes .estado h2 {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--corMedia);
+}
 
 section.information {
     text-align: center;
