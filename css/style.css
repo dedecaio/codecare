@@ -43,53 +43,6 @@ header h2 {
     color: var(--corSecundaria);
 }
 
-section.input {
-    text-align: center;
-    padding: 8px 0 20px 0;
-}
-
-
-
-section.input p {
-    font-size: 13px;
-    color: var(--corSecundaria);
-    font-weight: 300;
-}
-
-section.input form {
-    width: 100%;
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: nowwrap;
-}
-
-section.input input {
-    height: 60px;
-    width: 92%;
-    border: 0;
-    background-color: var(--corMedia);
-    padding-left: 10px;
-    border: 0;
-    font-size: 20px;
-}
-
-section.input input::placeholder {
-    color: var(--corDestaque);
-}
-
-section.input button {
-    width: 8%;
-    height: 60px;
-    border: 0;
-    margin: 0;
-    background-color: var(--corSecundaria);
-    color: var(--corDestaque);
-
-}
-
-section.input button i {
-    font-size: 18px;
-}
 
 section.information {
     text-align: center;

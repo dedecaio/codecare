@@ -1,3 +1,23 @@
+class Agente {
+    constructor(nome) {
+        this.nome = nome;
+        this.estado = "Normal";
+    }
+
+
+    alterarEstado(novoEstado) {
+        this.estado = novoEstado;
+    }
+}
+
+function simularAlteracao(num1, num2) {
+    valorInicial = Math.random();
+
+    numSorteado = Math.floor(valorInicial * (num2 - num1 + 1)) + num1;
+
+    return numSorteado;
+}
+
 var options = [
     ["Câncer de Mama", "Mastologista ou Oncologista especializado em câncer de mama.", "O câncer de mama é o crescimento anormal de células na mama. Pode ocorrer em homens e mulheres. É mais comum em mulheres e pode se manifestar como um nódulo na mama, alterações na pele ou mamilo, ou secreção mamilar."],
     ["Câncer de Pulmão", "Oncologista especializado em câncer de pulmão.", "O câncer de pulmão se desenvolve quando células anormais crescem nos pulmões. É frequentemente associado ao tabagismo, mas também pode ocorrer em não fumantes. Os sintomas podem incluir tosse persistente, falta de ar, dor no peito e perda de peso não intencional."],
@@ -9,7 +29,6 @@ var options = [
         "O câncer de pele se origina nas células da pele. Os tipos mais comuns são o carcinoma basocelular, o carcinoma de células escamosas e o melanoma. O câncer de pele pode aparecer como uma pinta ou lesão que muda de tamanho, forma ou cor ao longo do tempo."]
 ];
 
-var form = document.querySelector("form");
 
 var msg = document.getElementById("msg");
 var icon = document.getElementById("icon");
@@ -33,30 +52,25 @@ function setDefault() {
     info.innerHTML = "";
 }
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
 
-    let input = event.target.elements.code.value;
-    switch (input) {
-        case "1":
-            msgHandler(0);
-            break;
-        case "2":
-            msgHandler(1);
-            break;
-        case "3":
-            msgHandler(2);
-            break;
-        case "4":
-            msgHandler(3);
-            break;
-        case "5":
-            msgHandler(4);
-            break;
-        default:
-            setDefault();
-    }
-
-});
-
+var x = simularAlteracao(0, 11110);
+switch (x) {
+    case 1:
+        msgHandler(0);
+        break;
+    case 2:
+        msgHandler(1);
+        break;
+    case 3:
+        msgHandler(2);
+        break;
+    case 4:
+        msgHandler(3);
+        break;
+    case 5:
+        msgHandler(4);
+        break;
+    default:
+        setDefault();
+}
 
