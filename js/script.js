@@ -40,9 +40,9 @@ function msgHandler(num) {
     icon.classList.replace("fa-check", "fa-triangle-exclamation");
     especialista.innerHTML = genericMsg + OPTIONS[num][1];
     info.innerHTML = OPTIONS[num][2];
-    sensor.alterarEstado("Detectado");
-    marcadoresTumorais.alterarEstado("Em grande número");
-    celulasBoas.alterarEstado("Danificadas");
+    sensor.alterarEstado("Detectou os marcadores");
+    marcadoresTumorais.alterarEstado("Em grande número.");
+    celulasBoas.alterarEstado("Danificadas.");
     sensorHTML.innerHTML = "Sensor: " + sensor.estado;
     marcadoresTumoraisHTML.innerHTML += "Marcadores Tumorais: " + marcadoresTumorais.estado;
     celulasBoasHTML.innerHTML += "Células: " + celulasBoas.estado;
@@ -54,8 +54,8 @@ function setDefault() {
     especialista.innerHTML = "";
     info.innerHTML = "";
     sensor.alterarEstado("Não detectou nada.");
-    marcadoresTumorais.alterarEstado("Normal");
-    celulasBoas.alterarEstado("Ótimas");
+    marcadoresTumorais.alterarEstado("Normal.");
+    celulasBoas.alterarEstado("Ótimas.");
     sensorHTML.innerHTML = "Sensor: " + sensor.estado;
     marcadoresTumoraisHTML.innerHTML += "Marcadores Tumorais: " + marcadoresTumorais.estado;
     celulasBoasHTML.innerHTML += "Células: " + celulasBoas.estado;
