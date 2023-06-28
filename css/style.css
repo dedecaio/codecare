@@ -49,7 +49,7 @@ section.agentes {
 }
 
 section.agentes h1 {
-    font-size: 18px;
+    font-size: 22px;
     color: var(--corSecundaria);
     font-weight: 400;
     border-bottom: 1px solid var(--corSecundaria);
@@ -111,6 +111,7 @@ section.about {
 section.about h2 {
     font-weight: 400;
     border-bottom: 1px solid var(--corSecundaria);
+    font-size: 22px;
 }
 
 section.about p {
